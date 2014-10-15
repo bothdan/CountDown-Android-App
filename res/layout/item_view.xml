@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:maxHeight="180dp"
+        android:maxWidth="80dp" />
+
+    <TextView
+        android:id="@+id/item_txtDayLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_icon"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/item_txtEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"        
+        android:layout_alignStart="@id/item_txtDayLeft"
+        android:layout_below="@id/item_txtDayLeft"
+        android:layout_toRightOf="@+id/item_icon"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/item_txtDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"        
+        android:layout_alignStart="@id/item_txtEvent"
+        android:layout_below="@id/item_txtEvent"
+        android:layout_toRightOf="@+id/item_icon" />
+
+</RelativeLayout>
